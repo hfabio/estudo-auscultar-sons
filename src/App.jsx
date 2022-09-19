@@ -10,6 +10,8 @@ import AudioAcertou from './assets/silvio-santos-certa-resposta.mp3';
 import imgPlay from './assets/play.png';
 import imgPause from './assets/pause.png';
 
+const { BASE_URL, DEV } = import.meta.env;
+
 const App = () => {
   const getRandomPosition = () => Math.round(Math.random() * (gabarito.length - 0) + 0);
   const [respostaCorreta, setRespostaCorreta] = useState(gabarito[getRandomPosition()]);
@@ -38,7 +40,7 @@ const App = () => {
         <ButtonMedia Src={imgPause} OnClick={() => audioRef.current.pause()} Alt="botão de pause" />
       </ContainerAudioControl>
 
-      <audio ref={audioRef} src={`audios/${respostaCorreta?.path}`} hidden />
+      <audio ref={audioRef} src={`${DEV ? '' : BASE_URL}audios/${respostaCorreta?.path}`} hidden />
       <audio ref={audioErrouRef} src={AudioErrou} hidden />
       <audio ref={AudioAcertouRef} src={AudioAcertou} hidden />
 
