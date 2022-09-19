@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "B1",
+    "path": "b1.mp3"
+  },
+  {
+    "nome": "B2",
+    "path": "b2.mp3"
+  },
+  {
+    "nome": "B3",
+    "path": "b3.mp3"
+  },
+  {
+    "nome": "B4",
+    "path": "b4.mp3"
+  },
+  {
+    "nome": "Batidas normais",
+    "path": "batidas_normais.mp3"
+  },
+  {
+    "nome": "Estenose aortica",
+    "path": "estenose_aortica.mp3"
+  },
+  {
+    "nome": "Estenose mitral",
+    "path": "estenose_mitral.mp3"
+  },
+  {
+    "nome": "Galope de soma",
+    "path": "galope_de_soma.mp3"
+  },
+  {
+    "nome": "Insuficiencia aortica",
+    "path": "insuficiencia_aortica.mp3"
+  },
+  {
+    "nome": "Insuficiencia mitral",
+    "path": "insuficiencia_mitral.mp3"
+  }
+]
